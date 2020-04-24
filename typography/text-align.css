@@ -1,0 +1,33 @@
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+@media (--view-md-1px) {
+  .text-left\:md-1px {
+    text-align: left !important;
+  }
+
+  .text-center\:md-1px {
+    text-align: center !important;
+  }
+
+  .text-right\:md-1px {
+    text-align: right !important;
+  }
+
+  .text-justify\:md-1px {
+    text-align: justify !important;
+  }
+}

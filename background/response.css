@@ -1,0 +1,15 @@
+@each $size in xs, sm, md, lg {
+  @media (--view-$size) {
+    .bg-transparent\@$size {
+      background-color: transparent !important;
+    }
+
+    .bg-black\@$size {
+      background-color: #000 !important;
+    }
+
+    .bg-white\@$size {
+      background-color: #fff !important;
+    }
+  }
+}

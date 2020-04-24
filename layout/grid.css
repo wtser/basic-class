@@ -1,0 +1,72 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+
+  @media (--view-xs) {
+    margin: -6px;
+  }
+
+  @media (--view-sm) {
+    margin: -10px;
+  }
+}
+
+.grid-item-inner {
+  margin: 4px;
+  display: block;
+
+  @media (--view-xs) {
+    margin: 6px;
+  }
+
+  @media (--view-sm) {
+    margin: 10px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+  .grid-cell-$(i)\/12 {
+    flex: 0 0 calc(100% / 12 * $i);
+    max-width: calc(100% / 12 * $i);
+  }
+}
+
+@each $size in xs, sm, sm-1px, md, md-1px, lg, lg-1px {
+  @media (--view-$size) {
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      .grid-cell-$(i)\/12\:$size {
+        flex: 0 0 calc(100% / 12 * $i);
+        max-width: calc(100% / 12 * $i);
+      }
+    }
+  }
+}
+
+@each $i in 1, 2, 3, 4, 5, 6 {
+  .grid-col-$i {
+    & > .grid-item {
+      flex: 0 0 calc(100% / $i);
+      max-width: calc(100% / $i);
+    }
+  }
+}
+
+@each $size in xs, sm, sm-1px, md, md-1px, lg, lg-1px {
+  @media (--view-$size) {
+    @each $i in 1, 2, 3, 4, 5, 6 {
+      .grid-col-$i\:$size {
+        & > .grid-item {
+          flex: 0 0 calc(100% / $i);
+          max-width: calc(100% / $i);
+        }
+      }
+    }
+  }
+}
+
+/*TODO: first line remove padding-top and last line remove padding-bottom grid remove mt mb */

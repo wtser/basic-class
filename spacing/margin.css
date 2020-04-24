@@ -1,0 +1,72 @@
+.m-auto {
+  margin: auto !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.m-px {
+  margin: 1px !important;
+}
+
+@each $l in -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 27, 32,
+  36
+{
+  .m-$l {
+    margin: calc(4px * $l) !important;
+  }
+  .my-$l {
+    margin-bottom: calc(4px * $l) !important;
+    margin-top: calc(4px * $l) !important;
+  }
+  .mx-$l {
+    margin-left: calc(4px * $l) !important;
+    margin-right: calc(4px * $l) !important;
+  }
+  .mb-$l {
+    margin-bottom: calc(4px * $l) !important;
+  }
+  .mt-$l {
+    margin-top: calc(4px * $l) !important;
+  }
+  .ml-$l {
+    margin-left: calc(4px * $l) !important;
+  }
+  .mr-$l {
+    margin-right: calc(4px * $l) !important;
+  }
+}
+
+@each $size in sm, sm-1px, md, md-1px, lg, lg-1px {
+  @media (--view-$size) {
+    @each $l in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 27, 32,
+      36
+    {
+      .m-$l\:$size {
+        margin: calc(4px * $l) !important;
+      }
+      .my-$l\:$size {
+        margin-bottom: calc(4px * $l) !important;
+        margin-top: calc(4px * $l) !important;
+      }
+      .mx-$l\:$size {
+        margin-left: calc(4px * $l) !important;
+        margin-right: calc(4px * $l) !important;
+      }
+      .mb-$l\:$size {
+        margin-bottom: calc(4px * $l) !important;
+      }
+      .mt-$l\:$size {
+        margin-top: calc(4px * $l) !important;
+      }
+      .ml-$l\:$size {
+        margin-left: calc(4px * $l) !important;
+      }
+      .mr-$l\:$size {
+        margin-right: calc(4px * $l) !important;
+      }
+    }
+  }
+}

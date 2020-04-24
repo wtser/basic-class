@@ -1,0 +1,66 @@
+.p-auto {
+  padding: auto !important;
+}
+
+.p-px {
+  padding: 1px !important;
+}
+
+/* 
+0 4 8 12 16 20 24 32 36 40 48 64 80 96 128
+*/
+@each $l in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 18, 20, 24, 32, 36 {
+  .p-$l {
+    padding: calc(4px * $l) !important;
+  }
+  .py-$l {
+    padding-bottom: calc(4px * $l) !important;
+    padding-top: calc(4px * $l) !important;
+  }
+  .px-$l {
+    padding-left: calc(4px * $l) !important;
+    padding-right: calc(4px * $l) !important;
+  }
+  .pb-$l {
+    padding-bottom: calc(4px * $l) !important;
+  }
+  .pt-$l {
+    padding-top: calc(4px * $l) !important;
+  }
+  .pl-$l {
+    padding-left: calc(4px * $l) !important;
+  }
+  .pr-$l {
+    padding-right: calc(4px * $l) !important;
+  }
+}
+
+@each $size in xs, sm, sm-1px, md, md-1px, lg, lg-1px {
+  @media (--view-$size) {
+    @each $l in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 18, 20, 24, 32, 36 {
+      .p-$l\:$size {
+        padding: calc(4px * $l) !important;
+      }
+      .py-$l\:$size {
+        padding-bottom: calc(4px * $l) !important;
+        padding-top: calc(4px * $l) !important;
+      }
+      .px-$l\:$size {
+        padding-left: calc(4px * $l) !important;
+        padding-right: calc(4px * $l) !important;
+      }
+      .pb-$l\:$size {
+        padding-bottom: calc(4px * $l) !important;
+      }
+      .pt-$l\:$size {
+        padding-top: calc(4px * $l) !important;
+      }
+      .pl-$l\:$size {
+        padding-left: calc(4px * $l) !important;
+      }
+      .pr-$l\:$size {
+        padding-right: calc(4px * $l) !important;
+      }
+    }
+  }
+}

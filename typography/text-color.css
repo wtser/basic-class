@@ -1,0 +1,11 @@
+.text-transparent {
+  color: transparent !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}

@@ -1,0 +1,27 @@
+@each $display in block, inline-block, inline, flex, inline-flex, table,
+  table-row, table-cell
+{
+  .$(display) {
+    display: $display !important;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+@each $size in xs, sm, sm-1px, md, md-1px, lg, lg-1px {
+  @media (--view-$size) {
+    @each $display in block, inline-block, inline, flex, inline-flex, table,
+      table-row, table-cell
+    {
+      .$(display)\:$(size) {
+        display: $display !important;
+      }
+    }
+
+    .hidden\:$size {
+      display: none !important;
+    }
+  }
+}
