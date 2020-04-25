@@ -10,6 +10,10 @@
   background-color: #fff !important;
 }
 
+.bg-grey {
+  background-color: #eee !important;
+}
+
 @each $size in xs, sm, md, lg {
   @media (--view-$size) {
     .bg-transparent\@$size {
@@ -22,6 +26,10 @@
 
     .bg-white\@$size {
       background-color: #fff !important;
+    }
+
+    .bg-grey\@$size {
+      background-color: #eee !important;
     }
   }
 }

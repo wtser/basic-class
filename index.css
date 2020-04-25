@@ -12,4 +12,9 @@
 .card {
   @extend .shadow;
   @extend .rounded-lg;
+  @extend .p-3;
+}
+
+.card-title {
+  @extend .mt-0;
 }
