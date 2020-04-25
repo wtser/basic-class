@@ -8,3 +8,8 @@
 @import "./interactivity/index";
 @import "./border/index";
 @import "./sizing.css";
+
+.card {
+  @extend .shadow;
+  @extend .rounded-lg;
+}
