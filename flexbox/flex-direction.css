@@ -11,12 +11,14 @@
   flex-direction: column-reverse !important;
 }
 
-@media (--view-md-1px) {
-  .flex-row\:md-1px {
-    flex-direction: row !important;
-  }
+@each $size in xs, sm, md, lg {
+  @media (--view-$size) {
+    .flex-row\@$size {
+      flex-direction: row !important;
+    }
 
-  .flex-col\:md-1px {
-    flex-direction: column !important;
+    .flex-col\@$size {
+      flex-direction: column !important;
+    }
   }
 }

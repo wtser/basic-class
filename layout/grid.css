@@ -36,10 +36,10 @@
   }
 }
 
-@each $size in xs, sm, sm-1px, md, md-1px, lg, lg-1px {
+@each $size in xs, sm, md, lg {
   @media (--view-$size) {
     @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-      .grid-cell-$(i)\/12\:$size {
+      .grid-cell-$(i)\/12\@$size {
         flex: 0 0 calc(100% / 12 * $i);
         max-width: calc(100% / 12 * $i);
       }
@@ -56,10 +56,10 @@
   }
 }
 
-@each $size in xs, sm, sm-1px, md, md-1px, lg, lg-1px {
+@each $size in xs, sm, md, lg {
   @media (--view-$size) {
     @each $i in 1, 2, 3, 4, 5, 6 {
-      .grid-col-$i\:$size {
+      .grid-col-$i\@$size {
         & > .grid-item {
           flex: 0 0 calc(100% / $i);
           max-width: calc(100% / $i);
@@ -68,5 +68,3 @@
     }
   }
 }
-
-/*TODO: first line remove padding-top and last line remove padding-bottom grid remove mt mb */

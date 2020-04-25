@@ -53,9 +53,3 @@
 .scrolling-auto {
   -webkit-overflow-scrolling: auto !important;
 }
-
-@media (--view-lg) {
-  .overflow-auto\:lg {
-    overflow: auto !important;
-  }
-}
