@@ -9,3 +9,18 @@
 .text-white {
   color: #fff !important;
 }
+@each $size in mdd, lgg {
+  @media (--view-$size) {
+    .text-transparent\@$size {
+      color: transparent !important;
+    }
+
+    .text-black\@$size {
+      color: #000 !important;
+    }
+
+    .text-white\@$size {
+      color: #fff !important;
+    }
+  }
+}

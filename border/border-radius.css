@@ -18,7 +18,7 @@
   border-radius: 9999px !important;
 }
 
-@each $size in xs, sm, md, lg {
+@each $size in mdd, lgg {
   @media (--view-$size) {
     .rounded-none\@$size {
       border-radius: 0 !important;
