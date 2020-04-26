@@ -46,25 +46,3 @@
     }
   }
 }
-
-@each $i in 1, 2, 3, 4, 5, 6 {
-  .grid-col-$i {
-    & > .grid-item {
-      flex: 0 0 calc(100% / $i);
-      max-width: calc(100% / $i);
-    }
-  }
-}
-
-@each $size in xs, sm, md, lg {
-  @media (--view-$size) {
-    @each $i in 1, 2, 3, 4, 5, 6 {
-      .grid-col-$i\@$size {
-        & > .grid-item {
-          flex: 0 0 calc(100% / $i);
-          max-width: calc(100% / $i);
-        }
-      }
-    }
-  }
-}
