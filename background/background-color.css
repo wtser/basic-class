@@ -14,22 +14,14 @@
   background-color: #eee !important;
 }
 
-@each $size in xs, sm, md, lg {
+@each $size in mdd, lgg {
   @media (--view-$size) {
     .bg-transparent\@$size {
       background-color: transparent !important;
     }
 
-    .bg-black\@$size {
-      background-color: #000 !important;
-    }
-
     .bg-white\@$size {
       background-color: #fff !important;
-    }
-
-    .bg-grey\@$size {
-      background-color: #eee !important;
     }
   }
 }
