@@ -45,3 +45,55 @@
 .text-6xl {
   font-size: 64px !important;
 }
+
+@each $size in mdd, lgg {
+  @media (--view-$size) {
+    .text-xxs\@$size {
+      font-size: 10px !important;
+    }
+
+    .text-xs\@$size {
+      font-size: 12px !important;
+    }
+
+    .text-sm\@$size {
+      font-size: 14px !important;
+    }
+
+    .text-base\@$size {
+      font-size: 15px !important;
+    }
+
+    .text-md\@$size {
+      font-size: 16px !important;
+    }
+
+    .text-lg\@$size {
+      font-size: 18px !important;
+    }
+
+    .text-xl\@$size {
+      font-size: 20px !important;
+    }
+
+    .text-2xl\@$size {
+      font-size: 24px !important;
+    }
+
+    .text-3xl\@$size {
+      font-size: 30px !important;
+    }
+
+    .text-4xl\@$size {
+      font-size: 36px !important;
+    }
+
+    .text-5xl\@$size {
+      font-size: 48px !important;
+    }
+
+    .text-6xl\@$size {
+      font-size: 64px !important;
+    }
+  }
+}

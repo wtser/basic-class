@@ -11,12 +11,27 @@
   white-space: pre-line !important;
 }
 
-.whitespace-pre-line\:sm {
-  @media (--view-sm) {
-    white-space: pre-line !important;
-  }
-}
-
 .whitespace-pre-wrap {
   white-space: pre-wrap !important;
+}
+
+@each $size in smm, mdd, lgg {
+  @media (--view-$size) {
+    .whitespace-normal\@$size {
+      white-space: normal !important;
+    }
+    .whitespace-no-wrap\@$size {
+      white-space: nowrap !important;
+    }
+    .whitespace-pre\@$size {
+      white-space: pre !important;
+    }
+    .whitespace-pre-line\@$size {
+      white-space: pre-line !important;
+    }
+
+    .whitespace-pre-wrap\@$size {
+      white-space: pre-wrap !important;
+    }
+  }
 }

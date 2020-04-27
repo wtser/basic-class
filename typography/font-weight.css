@@ -33,3 +33,43 @@
 .font-black {
   font-weight: 900 !important;
 }
+
+@each $size in mdd, lgg {
+  @media (--view-$size) {
+    .font-hairline\@$size {
+      font-weight: 100 !important;
+    }
+
+    .font-thin\@$size {
+      font-weight: 200 !important;
+    }
+
+    .font-light\@$size {
+      font-weight: 300 !important;
+    }
+
+    .font-normal\@$size {
+      font-weight: 400 !important;
+    }
+
+    .font-medium\@$size {
+      font-weight: 500 !important;
+    }
+
+    .font-semibold\@$size {
+      font-weight: 600 !important;
+    }
+
+    .font-bold\@$size {
+      font-weight: 700 !important;
+    }
+
+    .font-extrabold\@$size {
+      font-weight: 800 !important;
+    }
+
+    .font-black\@$size {
+      font-weight: 900 !important;
+    }
+  }
+}

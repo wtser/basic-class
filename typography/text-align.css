@@ -14,20 +14,22 @@
   text-align: justify !important;
 }
 
-@media (--view-md-1px) {
-  .text-left\:md-1px {
-    text-align: left !important;
-  }
+@each $size in mdd, lgg {
+  @media (--view-$size) {
+    .text-left\@$size {
+      text-align: left !important;
+    }
 
-  .text-center\:md-1px {
-    text-align: center !important;
-  }
+    .text-center\@$size {
+      text-align: center !important;
+    }
 
-  .text-right\:md-1px {
-    text-align: right !important;
-  }
+    .text-right\@$size {
+      text-align: right !important;
+    }
 
-  .text-justify\:md-1px {
-    text-align: justify !important;
+    .text-justify\@$size {
+      text-align: justify !important;
+    }
   }
 }

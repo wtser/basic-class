@@ -14,10 +14,6 @@
   line-height: 1.5 !important;
 }
 
-.line-height-mdl {
-  line-height: 1.6 !important;
-}
-
 .line-height-lg {
   line-height: 2 !important;
 }
@@ -26,9 +22,30 @@
   line-height: normal !important;
 }
 
+@each $size in mdd, lgg {
+  @media (--view-$size) {
+    .line-height-0\@$size {
+      line-height: 0 !important;
+    }
 
-@media (--view-md-1px){
-  .line-height-md\:md-1px {
-    line-height: 1.5 !important;
+    .line-height-1\@$size {
+      line-height: 1 !important;
+    }
+
+    .line-height-sm\@$size {
+      line-height: 1.2 !important;
+    }
+
+    .line-height-md\@$size {
+      line-height: 1.5 !important;
+    }
+
+    .line-height-lg\@$size {
+      line-height: 2 !important;
+    }
+
+    .line-height-normal\@$size {
+      line-height: normal !important;
+    }
   }
 }
