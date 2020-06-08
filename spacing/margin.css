@@ -44,27 +44,27 @@
     @each $l in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 27, 32,
       36
     {
-      .m-$l\:$size {
+      .m-$l\@$size {
         margin: calc(4px * $l) !important;
       }
-      .my-$l\:$size {
+      .my-$l\@$size {
         margin-bottom: calc(4px * $l) !important;
         margin-top: calc(4px * $l) !important;
       }
-      .mx-$l\:$size {
+      .mx-$l\@$size {
         margin-left: calc(4px * $l) !important;
         margin-right: calc(4px * $l) !important;
       }
-      .mb-$l\:$size {
+      .mb-$l\@$size {
         margin-bottom: calc(4px * $l) !important;
       }
-      .mt-$l\:$size {
+      .mt-$l\@$size {
         margin-top: calc(4px * $l) !important;
       }
-      .ml-$l\:$size {
+      .ml-$l\@$size {
         margin-left: calc(4px * $l) !important;
       }
-      .mr-$l\:$size {
+      .mr-$l\@$size {
         margin-right: calc(4px * $l) !important;
       }
     }

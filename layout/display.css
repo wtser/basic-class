@@ -15,12 +15,12 @@
     @each $display in block, inline-block, inline, flex, inline-flex, table,
       table-row, table-cell
     {
-      .$(display)\:$(size) {
+      .$(display)\@$(size) {
         display: $display !important;
       }
     }
 
-    .hidden\:$size {
+    .hidden\@$size {
       display: none !important;
     }
   }
