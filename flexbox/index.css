@@ -1,7 +1,9 @@
 @import "./align-items.css";
 @import "./align-content.css";
+@import "./align-self.css";
 @import "./justify-content.css";
 @import "./shrink-and-grow.css";
 @import "./flex-wrap.css";
 @import "./flex-direction.css";
 @import "./flex.css";
+@import "./order.css";
