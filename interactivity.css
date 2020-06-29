@@ -1,10 +1,35 @@
-@import "./pointer-event.css";
-@import "./user-select.css";
+/* user-select */
+.select-none {
+  user-select: none !important;
+}
 
+.select-text {
+  user-select: text !important;
+}
+
+.select-all {
+  user-select: all !important;
+}
+
+.select-auto {
+  user-select: auto !important;
+}
+
+/* pointer-events */
+.pointer-events-none {
+  pointer-events: none !important;
+}
+
+.pointer-events-auto {
+  pointer-events: auto !important;
+}
+
+/* outline */
 .outline-none {
   outline: 0;
 }
 
+/* appearance */
 .appearance-none {
   appearance: none;
 }

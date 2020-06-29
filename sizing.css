@@ -122,6 +122,7 @@
   width: 100vw !important;
 }
 
+/* max-width */
 .max-w-full {
   max-width: 100% !important;
 }
@@ -130,6 +131,7 @@
   max-width: none !important;
 }
 
+/* min-width */
 .min-w-0 {
   min-width: 0;
 }
@@ -138,6 +140,7 @@
   min-width: 100%;
 }
 
+/* height */
 .h-0 {
   height: 0 !important;
 }
@@ -158,6 +161,7 @@
   height: 100vh !important;
 }
 
+/* min-height */
 .min-h-0 {
   min-height: 0 !important;
 }
@@ -170,6 +174,7 @@
   min-height: 100vh !important;
 }
 
+/* max-height */
 .max-h-full {
   max-height: 100% !important;
 }

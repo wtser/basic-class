@@ -4,7 +4,7 @@
 @import "./spacing/index";
 @import "./flexbox/index";
 @import "./effect/index";
-@import "./interactivity/index";
+@import "./interactivity.css";
 @import "./border/index";
 @import "./sizing.css";
 

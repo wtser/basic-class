@@ -1,51 +1,51 @@
-.line-height-0 {
-  line-height: 0 !important;
-}
-
-.line-height-1 {
+.leading-none {
   line-height: 1 !important;
 }
 
-.line-height-sm {
-  line-height: 1.2 !important;
+.leading-tight {
+  line-height: 1.25 !important;
 }
 
-.line-height-md {
+.leading-snug {
+  line-height: 1.375 !important;
+}
+
+.leading-normal {
   line-height: 1.5 !important;
 }
 
-.line-height-lg {
-  line-height: 2 !important;
+.leading-relaxed {
+  line-height: 1.625 !important;
 }
 
-.line-height-normal {
-  line-height: normal !important;
+.leading-loose {
+  line-height: 2 !important;
 }
 
 @each $size in mdd, lgg {
   @media (--view-$size) {
-    .line-height-0\@$size {
-      line-height: 0 !important;
-    }
-
-    .line-height-1\@$size {
+    .leading-none\@$size {
       line-height: 1 !important;
     }
 
-    .line-height-sm\@$size {
-      line-height: 1.2 !important;
+    .leading-tight\@$size {
+      line-height: 1.25 !important;
     }
 
-    .line-height-md\@$size {
+    .leading-snug\@$size {
+      line-height: 1.375 !important;
+    }
+
+    .leading-normal\@$size {
       line-height: 1.5 !important;
     }
 
-    .line-height-lg\@$size {
-      line-height: 2 !important;
+    .leading-relaxed\@$size {
+      line-height: 1.625 !important;
     }
 
-    .line-height-normal\@$size {
-      line-height: normal !important;
+    .leading-loose\@$size {
+      line-height: 2 !important;
     }
   }
 }

@@ -1,3 +1,7 @@
 @import "./opacity.css";
 @import "./shadow.css";
 @import "./hover.css";
+
+.fill-current {
+  fill: currentColor;
+}
