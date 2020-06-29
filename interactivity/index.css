@@ -1,2 +1,39 @@
 @import "./pointer-event.css";
 @import "./user-select.css";
+
+.outline-none {
+  outline: 0;
+}
+
+.appearance-none {
+  appearance: none;
+}
+
+/* cursor */
+.cursor-auto {
+  cursor: auto !important;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-wait {
+  cursor: wait !important;
+}
+
+.cursor-text {
+  cursor: text !important;
+}
+
+.cursor-move {
+  cursor: move !important;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
